@@ -17,7 +17,7 @@ export default function Header() {
                     blog
                   </li>
                 </Link>
-                <Link href="/create">
+                <Link href="/add">
                   <li className="hover:text-[#45ce55] font-bold capitalize">
                     Create
                   </li>
