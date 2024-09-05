@@ -11,11 +11,12 @@ export default function page() {
     })
 
     let submitBlog=(event)=>{
-      let blogId = date().getTime()
+      event.preventDefault()
+      let blogId =new  Date().getTime()
+      console.log(blogId);
         set(ref(db, 'blogs/' + blogId),formData)
         //console.log('Check:'+formData.heading+' '+formData.description);
-
-      event.preventDefault()
+    
     }
     let handleChange=(event)=>{
         const {name , value}=event.target
