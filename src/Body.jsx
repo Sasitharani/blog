@@ -37,11 +37,14 @@ export default function Body() {
             finalBlogData.length >=1 
             ?
             finalBlogData.map((items,index)=>{
+              return (
               <div className='border-2 shadow-gray-600 shadow-lg rounded-xl p-4 m-3'>
               <h1 className="text-xl capitalize font-bold">Demo</h1>
               <p>{items.heading}</p>
               <h1>{items.description}</h1>
               </div>
+            )
+ 
             })
 
               :
