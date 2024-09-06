@@ -1,71 +1,45 @@
 import Link from 'next/Link'
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
 
 export default function test() {
   return (
     <div>
-      <div>
-        <div className="setbg">
-          <div className="rounded mx-auto py-4 relative px-4 sm:sticky top-0 text-xl justify-between flex text-[white] bg-violet-700">
-            <h1 className="text-[#45ce55] text-2xl ml-2 sm:ml-0 font-extrabold">
-              Blog-<span className="text-[#ff4d00]">st</span>
-            </h1>
-            <div className="sm:block">
-              <ul className="flex text-lg gap-16 cursor-pointer">
-                <Link href="/">
-                  <li className="hover:text-[#45ce55] font-bold capitalize">
-                    blog
-                  </li>
-                </Link>
-                <Link href="/create">
-                  <li className="hover:text-[#45ce55] font-bold capitalize">
-                    Create
-                  </li>
-                </Link>
-                <Link href="/listing">
-                  <li className="hover:text-[#45ce55] font-bold capitalize">
-                    Listing
-                  </li>
-                </Link>
-                <li>
-                  <Link href="/user">
-                    <Link a href='/add'className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-4 border border-gray-400 rounded shadow">
-                      Add
-                    </Link>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="sm:hidden myshadow font-bold top-[66px] duration-75 w-[40%] bg-white text-black h-[100vh] absolute block left-[-100%]">
-              <ul className="flex flex-col text-lg gap-20 pt-10 items-center cursor-pointer">
-                <Link href="/">
-                  <li className="hover:text-[#45ce55] hover:font-bold capitalize">
-                    blog
-                  </li>
-                </Link>
-                <Link href="/create">
-                  <li className="hover:text-[#45ce55] hover:font-bold capitalize">
-                    create
-                  </li>
-                </Link>
-                <Link href="/listing">
-                  <li className="hover:text-[#45ce55] hover:font-bold capitalize">
-                    listing
-                  </li>
-                </Link>
-                <li>
-                  <Link href="/user">
-                    <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-4 border border-gray-400 rounded shadow">
-                      Login
-                    </button>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+<div class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="w-full max-w-lg">
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+          Username
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" />
       </div>
-    </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+          Password
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************" />
+      </div>
+      <div class="flex items-center justify-between">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+          Sign In
+        </button>
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-2" type="button">
+          Create a New Account
+        </button>
+      </div>
+      <div class="mt-4 flex items-center justify-center max-w-xl ">
+        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline flex items-center text-[12px] w-46 h-9" type="button" >
+        <div className='w-8 p-1'>
+          <FontAwesomeIcon icon={faGooglePlusG} className=" "/>
+        </div>
+          Sign in with Google
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
   )
 }
