@@ -22,15 +22,15 @@ export default function Header() {
                     Create
                   </li>
                 </Link>
-                <Link href="/listing">
+                <Link href="/test">
                   <li className="hover:text-[#45ce55] font-bold capitalize">
-                    Listing
+                    test
                   </li>
                 </Link>
                 <li>
-                  <Link href="/user">
+                  <Link href="/login">
                     <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-4 border border-gray-400 rounded shadow">
-                      Add
+                     Login
                     </button>
                   </Link>
                 </li>
